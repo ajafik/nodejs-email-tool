@@ -5,7 +5,7 @@ let log = console.log;
 var server 	= email.server.connect({
     user:    "username",
     password:"password",
-    host:    "smtp.your-email.com",
+    host:    "smtp.gmail.com",
     ssl:     true
  });
 
@@ -17,6 +17,6 @@ server.send({
     to:      "Oluwafikayo <oluwafikayoajayi@gmail.com>, Oluwafikayo <oluwafikayoajayi@gmail.com>",
     cc:      "Oluwafikayo <oluwafikayoajayi@gmail.com>",
     subject: "Sending Email with emailjs and NodeJS"
- }, function(err, message) { console.log(err || message); });
+ }, function(err, message) { log(err || message); });
 
-log(email);
+//log(email);
